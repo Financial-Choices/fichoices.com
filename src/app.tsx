@@ -7,7 +7,7 @@ import {
   Outlet,
   RouterProvider,
 } from "react-router-dom";
-import './App.css';
+import './app.css';
 import Footer from './footer';
 
 
