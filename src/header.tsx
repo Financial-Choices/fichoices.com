@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <>
             <header>
-                <a><img className="main-logo" src="logo.svg" alt="Financial Choices Logo" /></a>
+                <a><img className="main-logo" src="./logo.svg" alt="Financial Choices Logo" /></a>
                 <nav>
                     <ul>
                         <li>

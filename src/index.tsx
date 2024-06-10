@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './app';
 import reportWebVitals from './reportWebVitals';
-import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Navigate, RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom';
 import AboutPage from './about-page';
 import Home from './home';
 import ContactPage from './contact';
 
-const router = createBrowserRouter([
+// Needed to support GH Pages.
+const routerFactory = createHashRouter;
+// const routerFactory = createBrowserRouter;
+const router = routerFactory([
   {
     path: "/",
     element: <App />,
@@ -34,7 +37,6 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-
   <React.StrictMode>
     <head>
       <link rel="preconnect" href="https://fonts.googleapis.com" />

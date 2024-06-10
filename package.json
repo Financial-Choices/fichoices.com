@@ -51,7 +51,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://Financial-Choices.github.io/fichoices.com",
+  "homepage": "https://financial-choices.github.io/fichoices.com",
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }
