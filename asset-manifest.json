@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.94ae812e.css",
-    "main.js": "/static/js/main.72a00193.js",
-    "static/js/453.424d57d8.chunk.js": "/static/js/453.424d57d8.chunk.js",
-    "index.html": "/index.html",
-    "main.94ae812e.css.map": "/static/css/main.94ae812e.css.map",
-    "main.72a00193.js.map": "/static/js/main.72a00193.js.map",
-    "453.424d57d8.chunk.js.map": "/static/js/453.424d57d8.chunk.js.map"
+    "main.css": "/fichoices.com/static/css/main.94ae812e.css",
+    "main.js": "/fichoices.com/static/js/main.545d47a7.js",
+    "static/js/453.424d57d8.chunk.js": "/fichoices.com/static/js/453.424d57d8.chunk.js",
+    "index.html": "/fichoices.com/index.html",
+    "main.94ae812e.css.map": "/fichoices.com/static/css/main.94ae812e.css.map",
+    "main.545d47a7.js.map": "/fichoices.com/static/js/main.545d47a7.js.map",
+    "453.424d57d8.chunk.js.map": "/fichoices.com/static/js/453.424d57d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94ae812e.css",
-    "static/js/main.72a00193.js"
+    "static/js/main.545d47a7.js"
   ]
 }
