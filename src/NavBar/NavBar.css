@@ -1,39 +1,54 @@
-.header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color:#68929b;
+/*color palette*/
+:root {
+  --primary:#16450C;
+  --primary-1: #83B874;
+  --secondary: #98AEAE;
+  --secondary-1: #47535C;
+  --light: white;
+  --dark: black;
+  --underline: white;
+  --padding-s: 8px;
+  --padding-m: 12px;
+  --padding-l: 16px;
 }
 
-.nav {
-    align-items: center;
-    justify-content: space-between;
-    margin: 1rem;
+/*navigation bar*/
+.navbar{
+  display: flex;
+  background-color: var(--primary-1);
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100px;
+  padding: var(--padding-m);
 }
 
-/*Hover Animation*/
-.hover-underline-animation{
-    display: inline-block;
-    position: relative;
-  }
-  .hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: calc(100% - 20px);
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    transform-origin: bottom center;
-    transition: transform 0.25s ease-out;
-  }
-  .hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom center;
-  }
-/*End of Hover Animation*/
+.nav-style{
+  color: var(--dark);
+  text-align: center;
+}
+
+.nav-elements{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-elements *{
+  float: left;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.nav-elements *:hover{
+  text-decoration: underline;
+}
+
+.contact-button{
+  padding-left: 8px;
+  padding-right: 8px;
+}
