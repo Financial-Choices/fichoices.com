@@ -10,16 +10,25 @@
   --padding-s: 8px;
   --padding-m: 12px;
   --padding-l: 16px;
+  --font-size: 20px;
 }
 
 /*navigation bar*/
+.logo{
+  color:white;
+  padding: 12px 12px;
+  font-weight: bold;
+  font-size: var(--font-size);
+  display: flex;
+  align-items: flex-start;
+}
 .navbar{
   display: flex;
   background-color: var(--primary-1);
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  min-height: 100px;
+  min-height: 40px;
   padding: var(--padding-m);
 }
 
@@ -31,10 +40,9 @@
 .nav-elements{
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 16px 16px;
-  font-size: 20px;
-  font-weight: bold;
+  justify-content: flex-end;
+  padding: 12px 12px;
+  font-size: var(--font-size);
 }
 
 .nav-elements *{
@@ -49,6 +57,38 @@
 }
 
 .contact-button{
-  padding-left: 8px;
+  padding-left: 20px;
   padding-right: 8px;
+  font-size: var(--font-size);
 }
+
+/*Responsive Design Portion*/
+@media screen and (max-width: 1150px) {
+  .nav-elements{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 80%;
+    height: 100%;
+    padding: 6rem 3rem 0;
+    transition: right 0.4s;
+  }
+ }
+
+@media screen and (min-width: 1150px) {
+  .navbar {
+    height: calc(var(--header-height) + 1rem);
+  }
+  .nav_toggle,
+  .nav_close {
+    display: none;
+  }
+ 
+  .nav-elements {
+    flex-direction: row;
+    column-gap: 2.5rem;
+  }
+ }
+/*End of Responsive Design Portion*/

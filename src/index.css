@@ -15,20 +15,17 @@
  }
  
  body {
-  background-color: var(--body-color);
-  color: var(--text-color);
   font-family: var(--body-font);
- }
- 
- ul {
-  list-style: none;
  }
  
  a {
   text-decoration: none;
  }
 
-/* Color Scheme */
-.color-teal {
-  color: #68929b;
-}
+ .page-header{
+  font-size: var(--h2-font-size);
+ }
+
+ .section-text{
+  font-weight: var(--small-font-size);
+ }
